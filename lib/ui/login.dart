@@ -17,6 +17,9 @@ class LoginState extends State<Login>{
         title: new Text("Login"),
         backgroundColor: Colors.blueAccent,
       ),
+
+      backgroundColor: Colors.blueGrey,
+
     );
   }
 
