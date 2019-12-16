@@ -30,6 +30,7 @@ class LoginState extends State<Login>{
               "images/face.png",
               width: 90.0,
               height: 90.0,
+              color: Colors.greenAccent,
             )
           ],
         ),
