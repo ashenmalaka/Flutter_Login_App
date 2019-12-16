@@ -15,6 +15,7 @@ class LoginState extends State<Login>{
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("Login"),
+        centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
 
