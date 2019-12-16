@@ -9,6 +9,9 @@ class Login extends StatefulWidget {
 }
     
 class LoginState extends State<Login>{
+
+  final TextEditingController _userController = new TextEditingController();
+  
   @override
   Widget build(BuildContext context) {
     
@@ -31,7 +34,25 @@ class LoginState extends State<Login>{
               width: 90.0,
               height: 90.0,
               color: Colors.greenAccent,
-            )
+            ),
+
+            //form
+            new Container(
+              height: 200.0,
+              width: 350.0,
+              color: Colors.white70,
+              child: new Column(
+                children: <Widget>[
+                  new TextField(
+                    controller: _userController,
+                    decoration: new InputDecoration(
+                      hintText: 'Username',
+                      icon: new Icon(Icons.person),
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
