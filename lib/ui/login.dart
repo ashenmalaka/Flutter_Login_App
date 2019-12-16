@@ -11,6 +11,7 @@ class Login extends StatefulWidget {
 class LoginState extends State<Login>{
 
   final TextEditingController _userController = new TextEditingController();
+  final TextEditingController _passwordController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +49,14 @@ class LoginState extends State<Login>{
                     decoration: new InputDecoration(
                       hintText: 'Username',
                       icon: new Icon(Icons.person),
+                    ),
+                  ),
+
+                  new TextField(
+                    controller: _passwordController,
+                    decoration: new InputDecoration(
+                      hintText: 'Password',
+                      icon: new Icon(Icons.lock),
                     ),
                   )
                 ],
