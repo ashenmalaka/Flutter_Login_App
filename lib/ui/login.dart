@@ -21,6 +21,20 @@ class LoginState extends State<Login>{
 
       backgroundColor: Colors.blueGrey,
 
+      body: new Container(
+        alignment: Alignment.topCenter,
+        child: new Column(
+          children: <Widget>[
+            //image icon
+            new Image.asset(
+              "images/face.png",
+              width: 90.0,
+              height: 90.0,
+            )
+          ],
+        ),
+      ),
+
     );
   }
 
