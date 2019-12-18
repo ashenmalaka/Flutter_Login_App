@@ -69,7 +69,7 @@ class LoginState extends State<Login>{
                          margin: const EdgeInsets.only(left: 38.0), //Added padding to left
                          child: new RaisedButton(
                            onPressed: () {
-                             debugPrint("Login Button is Clicked");
+                             debugPrint("Login button is clicked");
               
                            },
                            color: Colors.redAccent,
@@ -80,7 +80,25 @@ class LoginState extends State<Login>{
                               )
                             ),
                          ),
-                       )
+                       ),
+                       
+                       //Clear Button
+                       new Container(
+                         margin: EdgeInsets.only(right: 38.0),
+                         child: new RaisedButton(
+                           onPressed: () {
+                             debugPrint("Clear button is clicked");
+
+                           },
+                          color: Colors.redAccent,
+                          child: new Text("Clear",
+                           style: new TextStyle(
+                             color: Colors.white,
+                             fontSize: 17.0,
+                           ),
+                          ),
+                         ),
+                         )
                       ],
                     ),
                   )
