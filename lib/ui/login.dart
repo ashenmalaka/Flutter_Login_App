@@ -60,12 +60,13 @@ class LoginState extends State<Login>{
                     ),
                   ),
 
-                  new Padding(padding: new EdgeInsets.all(10.5)),
+                  new Padding(padding: new EdgeInsets.all(10.5)), //Added Padding
                   new Center(
                     child: new Row(
                       children: <Widget>[
                         //Login Button
                        new Container(
+                         margin: const EdgeInsets.only(left: 38.0), //Added padding to left
                          child: new RaisedButton(
                            onPressed: () {
                              debugPrint("Login Button is Clicked");
@@ -75,7 +76,7 @@ class LoginState extends State<Login>{
                            child: new Text("Login",
                             style: new TextStyle(
                               color: Colors.white,
-                              fontSize: 17,
+                              fontSize: 17.0,
                               )
                             ),
                          ),
