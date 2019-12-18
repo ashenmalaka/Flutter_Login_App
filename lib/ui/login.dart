@@ -13,6 +13,14 @@ class LoginState extends State<Login>{
   final TextEditingController _userController = new TextEditingController();
   final TextEditingController _passwordController = new TextEditingController();
 
+  void _erase(){
+    
+    setState(() {
+      _userController.clear();
+      _passwordController.clear();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     
@@ -88,6 +96,7 @@ class LoginState extends State<Login>{
                          child: new RaisedButton(
                            onPressed: () {
                              debugPrint("Clear button is clicked");
+                             _erase();
 
                            },
                           color: Colors.redAccent,
@@ -106,7 +115,7 @@ class LoginState extends State<Login>{
               ),
             ),
 
-            new Padding(padding: new EdgeInsets.all(10.5)),
+            new Padding(padding: new EdgeInsets.all(10.5)), //Added padding to row text
             new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
