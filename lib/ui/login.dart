@@ -132,7 +132,7 @@ class LoginState extends State<Login>{
             new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                new Text("Welcome, Ashen",
+                new Text("Welcome, $_welcomeString",
                  style: new TextStyle(
                   color: Colors.white,
                   fontSize: 19.5,
