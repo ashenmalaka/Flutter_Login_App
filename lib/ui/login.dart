@@ -106,6 +106,7 @@ class LoginState extends State<Login>{
               ),
             ),
 
+            new Padding(padding: new EdgeInsets.all(10.5)),
             new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
