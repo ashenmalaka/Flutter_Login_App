@@ -105,6 +105,19 @@ class LoginState extends State<Login>{
                 ],
               ),
             ),
+
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new Text("Welcome, Ashen",
+                 style: new TextStyle(
+                  color: Colors.white,
+                  fontSize: 19.5,
+                  fontWeight: FontWeight.w400,
+                 )
+                )
+              ],
+            )
           ],
         ),
       ),
