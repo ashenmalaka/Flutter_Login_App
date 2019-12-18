@@ -60,6 +60,7 @@ class LoginState extends State<Login>{
                     ),
                   ),
 
+                  new Padding(padding: new EdgeInsets.all(10.5)),
                   new Center(
                     child: new Row(
                       children: <Widget>[
