@@ -12,12 +12,24 @@ class LoginState extends State<Login>{
 
   final TextEditingController _userController = new TextEditingController();
   final TextEditingController _passwordController = new TextEditingController();
+  String _welcomeString = "";
 
   void _erase(){
     
     setState(() {
       _userController.clear();
       _passwordController.clear();
+    });
+  }
+
+  void _welcomeName(){
+
+    setState(() {
+      if(_userController.text.isNotEmpty && _passwordController.text.isNotEmpty){
+        _welcomeString = _userController.text;
+      }else{
+        _welcomeString = "Nothing";
+      }
     });
   }
 
@@ -78,6 +90,7 @@ class LoginState extends State<Login>{
                          child: new RaisedButton(
                            onPressed: () {
                              debugPrint("Login button is clicked");
+                             _welcomeName();
               
                            },
                            color: Colors.redAccent,
