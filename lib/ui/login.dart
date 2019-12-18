@@ -47,7 +47,7 @@ class LoginState extends State<Login>{
 
       body: new Container(
         alignment: Alignment.topCenter,
-        child: new Column(
+        child: new ListView(
           children: <Widget>[
             //image icon
             new Image.asset(
