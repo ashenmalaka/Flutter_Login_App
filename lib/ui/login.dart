@@ -84,7 +84,7 @@ class LoginState extends State<Login>{
                        
                        //Clear Button
                        new Container(
-                         margin: EdgeInsets.only(right: 38.0),
+                         margin: EdgeInsets.only(left: 85.0),
                          child: new RaisedButton(
                            onPressed: () {
                              debugPrint("Clear button is clicked");
