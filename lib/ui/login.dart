@@ -78,6 +78,9 @@ class LoginState extends State<Login>{
                       hintText: 'Password',
                       icon: new Icon(Icons.lock),
                     ),
+
+                    obscureText: true, //Secured password
+
                   ),
 
                   new Padding(padding: new EdgeInsets.all(10.5)), //Added Padding
