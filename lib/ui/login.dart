@@ -58,6 +58,29 @@ class LoginState extends State<Login>{
                       hintText: 'Password',
                       icon: new Icon(Icons.lock),
                     ),
+                  ),
+
+                  new Center(
+                    child: new Row(
+                      children: <Widget>[
+                        //Login Button
+                       new Container(
+                         child: new RaisedButton(
+                           onPressed: () {
+                             debugPrint("Login Button is Clicked");
+              
+                           },
+                           color: Colors.redAccent,
+                           child: new Text("Login",
+                            style: new TextStyle(
+                              color: Colors.white,
+                              fontSize: 17,
+                              )
+                            ),
+                         ),
+                       )
+                      ],
+                    ),
                   )
                 ],
               ),
